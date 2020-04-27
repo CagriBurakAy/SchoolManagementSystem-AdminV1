@@ -1,0 +1,36 @@
+--
+-- File generated with SQLiteStudio v3.2.1 on Pzt Nis 27 20:21:45 2020
+--
+-- Text encoding used: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: login
+CREATE TABLE login (username VARCHAR (20), password VARCHAR (20), division VARCHAR (20));
+INSERT INTO login (username, password, division) VALUES ('admin', 'admin', 'Admin');
+INSERT INTO login (username, password, division) VALUES ('student', 'student', 'Student');
+
+-- Table: students
+CREATE TABLE students (id TEXT, fname TEXT, lname TEXT, email TEXT, DOB TEXT);
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('1', 'Çaðrý Burak', 'Ay', 'cagriburakay@hotmail.com', '2020-04-24');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('1', '2', '3', '4', '0000-00-00');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('3', 'Emre', 'Berkay', 'emre@gmail.com', '0000-00-00');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('3', 'Emre', 'Berkay', 'emre@gmail.com', '0000-00-00');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('3', 'Emre', 'Berkay', 'emre@gmail.com', '0000-00-00');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('45', 'Ýklim', 'Öztürk', 'iklim@gmail.com', '0000-00-00');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('32', 'John', 'Doe', 'johnd@hotmail.com', '0000-00-00');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('3', 'Arda', 'Düzgün', 'arda@hotmail.com', '0000-00-00');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('3', 'Arda', 'Düzgün', 'arda@hotmail.com', '0000-00-00');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('34', 'Jane', 'Doe', 'jane@hotmail.com', '0000-00-00');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('56', 'Morgan', 'Freeman', 'sdasdasd', '0000-00-00');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('10', 'Jack', 'Doe', 'jack@gmail.com', '2020-02-14');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('5345', 'Morgan', 'Freeman', 'dasdasdsadsad', '0000-00-00');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('25', 'Sarah', 'Walker', 'sarah@gmail.com', '2020-02-14');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('35', 'John', 'Casey', 'johnc@gmail.com', '2020-02-14');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('85', 'JOHN', 'WICK', 'JOHN@WICK.com', '2020-02-14');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('123', 'asdasda', 'adasda', 'asdasda@gmail.com', '2020-02-14');
+INSERT INTO students (id, fname, lname, email, DOB) VALUES ('50', 'Tom', 'Tom', 'tom@gmail.com', '2020-02-14');
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;
